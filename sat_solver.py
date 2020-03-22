@@ -107,7 +107,7 @@ def solve(input_file, output_file):
             G.add_nodes_from(range(1, n+1))
             G.add_edges_from(edges)
             pos = nx.spring_layout(G)  # positions for all nodes
-            colours = sorted([(x-1) % k+1 for x, v in solution_in.items() if v and x <= k*n])
+            colours = [(x-1) % k+1 for x, v in sorted(solution_in.items()) if v and x <= k*n]
             nx.draw_networkx_nodes(G, pos, nodelist=range(1, n+1), node_color=colours, cmap=plt.get_cmap("jet"),
                                    node_size=500, alpha=0.8)
             nx.draw_networkx_edges(G, pos, width=1.0, alpha=0.5)
