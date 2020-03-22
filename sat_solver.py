@@ -119,8 +119,8 @@ def solve(input_file, output_file):
         elif "discrepancy" in problem[0]:
             C = int(problem[1])
             n = int(problem[2])
-            print(f"{C}-discrepancy of sequence with n={n}:\n\t" + ", ".join([b for a, b in sorted([(x, "1") if v else
-                  (x, "-1") for x, v in solution_in.items() if x <= n])]))
+            result = ["1" if solution_in.get(a+1, True) else "-1" for a in range(n)]
+            print(f"{C}-discrepancy of sequence with n={n}:\n\t" + ", ".join(result))
         elif "hamiltonian" in problem[0]:
             typ = problem[1]
             m = int(problem[-2][1:])
