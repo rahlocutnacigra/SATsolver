@@ -19,7 +19,7 @@ To make new test cases, to solve them and to represent results graphicaly use `t
 * To add a new Hadamard matrix test case, use function `hadamard(n)` where
   * `n` is matrix dimension
  
-DIMACS format files of the generated files will be saved in a folder `sat`. All the solutions will be in a folder `results`, visual representations of solutions for problems on graphs will be saved in a folder `fig`. 
+DIMACS format files of the generated problems will be saved in a folder `sat`. All the solutions will be in a folder `results`, visual representations of solutions for problems on graphs will be saved in a folder `fig`. 
  Those folders also contain our test cases and their solutions. 
  
 When you run a file `test2.py` all of the files in folder `sat` are being solved. For solving a single problem, run it with `SAT_solver.py` or run `sat_solver.py` and use function `solve(input_file, output_file)`.
