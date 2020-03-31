@@ -22,6 +22,6 @@ To make new test cases, to solve them and to represent results graphicaly use `t
 DIMACS format files of the generated problems will be saved in a folder `sat`. All the solutions will be in a folder `results`, visual representations of solutions for problems on graphs will be saved in a folder `fig`. 
  Those folders also contain our test cases and their solutions. 
  
-When you run a file `test2.py` all of the files in folder `sat` are being solved. For solving a single problem, run it with `SAT_solver.py` or run `sat_solver.py` and use function `solve(input_file, output_file)`.
+When you run a file `test2.py` all of the files in folder `sat` are being solved. For solving a single problem, run it with `SAT_solver.py` or run `sat_solver.py` and use function `solve(input_file, output_file)` for visual representations of problems on graphs.
 
 Our chosen CNF problem is `colouring_4_stiridelni_n40.txt` in the main folder.
