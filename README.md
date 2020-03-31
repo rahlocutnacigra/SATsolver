@@ -17,7 +17,7 @@ To make new test cases, to solve them and to represent results graphicaly use `t
   * `C` is discrepancy parameter
   * `n` is length of the sequence
 * To add a new Hadamard matrix test case, use function `hadamard(n)` where
- * `n` is matrix dimension
+  * `n` is matrix dimension
  
 DIMACS format files of the generated files will be saved in a folder `sat`. All the solutions will be in a folder `results`, visual representations of solutions for problems on graphs will be saved in a folder `fig`. 
  Those folders also contain our test cases and their solutions. 
